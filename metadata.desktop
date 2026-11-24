@@ -1,0 +1,13 @@
+[SddmGreeterTheme]
+Name=Call of the Night
+Description=Grayscale anime SDDM theme inspired by Call of the Night
+Author=CallOfTheNight-SDDM contributors
+Copyright=(c) 2026 — based on SDDM Sugar Candy by Marian Arlt and Makima-SDDM by Arnau029
+License=GPL-3.0-or-later
+Type=sddm-theme
+Version=1.0
+Screenshot=preview.png
+MainScript=Main.qml
+ConfigFile=theme.conf
+Theme-API=2.0
+QtVersion=6
