@@ -160,12 +160,14 @@ Pane {
         }
 
         // The dark form tint fades out together with the blur.
-        Rectangle {
+        LinearGradient {
             id: formBackgroundFade
             x: 0
             y: 0
             width: root.blurPanelWidth
             height: parent.height
+            start: Qt.point(0, 0)
+            end: Qt.point(width, 0)
             visible: config.HaveFormBackground == "true" && root.softLeftBlur
             z: 1
             gradient: Gradient {
@@ -188,13 +190,15 @@ Pane {
             visible: false
         }
 
-        Rectangle {
+        LinearGradient {
             id: panelGrainMask
 
             x: 0
             y: 0
             width: root.blurPanelWidth
             height: parent.height
+            start: Qt.point(0, 0)
+            end: Qt.point(width, 0)
             visible: false
             gradient: Gradient {
                 GradientStop { position: 0.0; color: "white" }
@@ -405,13 +409,15 @@ Pane {
             visible: false
         }
 
-        Rectangle {
+        LinearGradient {
             id: softBlurMask
 
             x: 0
             y: 0
             width: root.blurPanelWidth
             height: parent.height
+            start: Qt.point(0, 0)
+            end: Qt.point(width, 0)
             visible: false
             gradient: Gradient {
                 GradientStop { position: 0.0; color: "white" }
