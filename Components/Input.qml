@@ -201,7 +201,7 @@ Column {
             topPadding: 0
             bottomPadding: 0
             font.capitalization: Font.MixedCase
-            font.pointSize: root.font.pointSize * 1.6
+            font.pointSize: root.font.pointSize * (root.height < 900 ? 1.35 : 1.6)
             font.weight: Font.Light
             font.letterSpacing: root.font.pointSize * 0.07
             color: root.palette.text
